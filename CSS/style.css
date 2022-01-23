@@ -41,6 +41,7 @@ body {
 #calculatorWrap {
 	height: 80vh;
 	width: 60vh;
+    z-index: 4;
 	background: linear-gradient(
 		to left,
 		rgba(5, 5, 10, 1) 0%,
@@ -53,6 +54,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+
 }
 .display-screen {
 	height: 10%;
@@ -230,4 +232,9 @@ body {
 	100% {
 		background-position: right;
 	}
+}
+
+canvas {
+    display: block;
+    position: fixed;
 }
