@@ -41,9 +41,11 @@ btnOnOff.addEventListener("click", () => {
         currentEquationNum = "";
         previousSymbol = "";
         isCalculatorOn = false;
+        clearInterval(x);
     } 
     else {
         isCalculatorOn = true;
+        x = setInterval(draw, 33);
     }
 });
 
